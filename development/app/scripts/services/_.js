@@ -5,19 +5,10 @@
  * @name developmentApp.
  * @description
  * #
- * Factory in the developmentApp.
+ * Making lodash injectable.
  */
 angular.module('developmentApp')
   .factory('_', function ($window) {
-    // Service logic
-    // ...
-
-    var meaningOfLife = 42;
-
-    // Public API here
-    return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
-    };
+      return $window._;
+    
   });

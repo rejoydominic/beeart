@@ -20,21 +20,12 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">development</h3>
-      </div>
+    <div class="container-fluid">
+      <a href="#/register">Register</a>
 
       <div ng-view=""></div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+
     </div>
 
 
@@ -81,12 +72,17 @@
     <script src="bower_components/lodash/lodash.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.4.min.js"></script>
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/services/_.js"></script>
+        <script src="scripts/controllers/register.js"></script>
+        <script src="scripts/services/user.js"></script>
         <!-- endbuild -->
+        <script>
+            Parse.initialize("Lh9a5Mv3r6L5s8hLOpjJ9um2RBzA984MGwTI099w", "cVZn9pBionkCk6PPNnDVApQzEIjMJikOaL8nwEcQ");
+        </script>
 </body>
 </html>

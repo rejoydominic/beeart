@@ -367,9 +367,6 @@ module.exports = function (grunt) {
           dest: '../beeartweb/public/',
           src: '**'
           }
-    // deploy: {
-    //         files: [{ expand: true, src: '<%= yeoman.dist %>', dest: '../'}]
-    //     }
     },
 
     // Run some tasks in parallel to speed up the build process
@@ -434,7 +431,7 @@ module.exports = function (grunt) {
     'concat',
     'ngAnnotate',
     'copy:dist',
-    'cdnify',
+    // 'cdnify',
     'cssmin',
     'uglify',
     'filerev',
