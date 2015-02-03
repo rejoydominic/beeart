@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "beeart"
+        }, 
+        "beeart": {
+            "applicationId": "Lh9a5Mv3r6L5s8hLOpjJ9um2RBzA984MGwTI099w", 
+            "masterKey": "ljdGeURfQYqByy88Tnq2HZotusloHve1pF052gQi"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.4"
+    }
+}
